@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?gsxn56');
+  src:  url('fonts/icomoon.eot?gsxn56#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gsxn56') format('truetype'),
+    url('fonts/icomoon.woff?gsxn56') format('woff'),
+    url('fonts/icomoon.svg?gsxn56#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-paste:before {
+  content: "\e92d";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-pushpin:before {
+  content: "\e901";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-display:before {
+  content: "\e904";
+}
+.icon-redo2:before {
+  content: "\e968";
+}
+.icon-bubbles4:before {
+  content: "\e970";
+}
+.icon-user:before {
+  content: "\e905";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-road:before {
+  content: "\e9b1";
+}
+.icon-menu:before {
+  content: "\e909";
+}
+.icon-earth:before {
+  content: "\e90a";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-checkmark2:before {
+  content: "\ea11";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-amazon:before {
+  content: "\e90d";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\e90f";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
