@@ -87,6 +87,24 @@ a {
   border: 2px solid white;
   transition-delay: 0.5s;
 }
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5px;
+}
+
 /* End Global Rules */
 
 /* Start Heading */
@@ -211,6 +229,46 @@ a {
 }
 /* End Articles */
 
+/* Start Gallery */
+.gallery {
+  padding: 100px 0;
+  background-color: #ececec;
+}
+.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.gallery .container .box {
+  padding: 15px;
+  background-color: white;
+}
+.gallery .box .image {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .box .image::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255 255 255 /20%);
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.gallery .box .image:hover::before {
+  animation: flashing 0.7s;
+}
+.gallery .box .image img {
+  max-width: 100%;
+}
+.gallery .box .image:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+/* End Gallery */
+
 /* Start Animation */
 @keyframes left-move {
   50% {
@@ -240,6 +298,16 @@ a {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+@keyframes flashing {
+  0%,40%{
+      opacity: 1;
+  }
+  100%{
+      width: 200%;
+      height: 200%;
+      opacity: 0;
   }
 }
 /* End Animation */
