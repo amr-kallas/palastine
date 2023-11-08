@@ -7,20 +7,20 @@
   margin: 0;
 }
 :root {
-  --main-color: #2196f3;
-  --bg-color: #fff;
-  --bg-color-alt: #ececec;
-  --text-color: #000;
-  --text-color-alt: #fff;
-  --padding-color: #fff;
-}
-.dark {
   --main-color: #27ae60;
   --bg-color: #191d2b;
   --bg-color-alt: #191d2b;
   --text-color: #fff;
   --text-color-alt: #000;
   --padding-color: #2a2e35;
+}
+.light {
+  --main-color: #2196f3;
+  --bg-color: #fff;
+  --bg-color-alt: #ececec;
+  --text-color: #000;
+  --text-color-alt: #fff;
+  --padding-color: #fff;
 }
 .icon {
   display: inline-block;

@@ -2,5 +2,5 @@ let theme=document.querySelector(".theme");
 
 theme.addEventListener("click",(e) => {
     let element =document.body;
-    element.classList.toggle('dark');
+    element.classList.toggle('light');
 })
