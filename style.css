@@ -365,6 +365,56 @@ a {
 }
 /* End Gallery */
 
+.testimonials{
+  padding: 100px 0;
+  background-color: var(--bg-color);
+}
+.testimonials .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 40px;
+}
+.testimonials .box{
+  background-color: #202845;
+  border-radius: 6px;
+  position: relative;
+  padding: 20px;
+}
+.testimonials .box img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  border: 10px solid var(--bg-color);
+}
+hr{
+  border: 1px solid #161925;
+}
+.testimonials .box h3{
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.testimonials .box span{
+  padding-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  color: #c6cce5;
+}
+.testimonials .box .star{
+  font-size: 20px;
+}
+.testimonials .box .star .filled{
+  color: #ffc107;
+}
+.testimonials .box p{
+  padding-top: 10px;
+  color: #777;
+  line-height: 1.5;
+}
+/* End Testimonials */
+
 /* Start Animation */
 @keyframes left-move {
   50% {
