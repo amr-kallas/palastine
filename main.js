@@ -1,7 +1,9 @@
 let theme = document.querySelector(".theme");
 let imgElement = document.querySelector(".heading .image .second-img");
 let layout=document.querySelector(".layout")
-
+let button1 = document.querySelector("#A");
+let button2 = document.querySelector("#B");
+let button3 = document.querySelector("#C");
 console.log(layout)
 theme.addEventListener("click", (e) => {
   let element = document.body;
@@ -16,3 +18,10 @@ theme.addEventListener("click", (e) => {
 
   }
 });
+
+button2.addEventListener("click", (e) =>{
+  let imgs = document.getElementsByClassName("active");
+  imgs.classList.toggle("active"); 
+  let img = document.querySelector("#B-image");
+  img.classList.add("active");
+})
