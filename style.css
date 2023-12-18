@@ -10,21 +10,23 @@
   --main-color: #27ae60;
   --bg-color: #191d2b;
   --bg-color-alt: #191d2b;
-  --bg-color-box:#202845;
+  --bg-color-box: #202845;
   --text-color: #fff;
   --text-color-alt: #000;
   --padding-color: #2a2e35;
   --header-color: #93cbf8;
+  --input-color: #18203d;
 }
 .light {
   --main-color: #2196f3;
   --bg-color: #ececec;
   --bg-color-alt: #ececec;
-  --bg-color-box:#fff;
+  --bg-color-box: #fff;
   --text-color: #000;
   --text-color-alt: #fff;
   --padding-color: #fff;
   --header-color: #2196f3;
+  --input-color: #fff;
 }
 .icon {
   display: inline-block;
@@ -256,8 +258,8 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background:rgb(0 0 0/60%);
-  transition: .5s;
+  background: rgb(0 0 0/60%);
+  transition: 0.5s;
 }
 /* End Img */
 /* Start Articles */
@@ -330,37 +332,37 @@ a {
     transform: translateY(-10px);
   }
 }
-.gallery .photos{
+.gallery .photos {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: 200px;
   grid-auto-flow: dense;
   gap: 10px;
 }
-.gallery .photos div{
+.gallery .photos div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gallery .photos img{
+.gallery .photos img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.gallery .photos .wide{
+.gallery .photos .wide {
   grid-column: span 2;
 }
 
-.gallery .photos .tall{
+.gallery .photos .tall {
   grid-row: span 2;
 }
-@media(max-width:450px){
-  .gallery .photos .wide{
+@media (max-width: 450px) {
+  .gallery .photos .wide {
     grid-column: span 1;
   }
-  
-  .gallery .photos .tall{
+
+  .gallery .photos .tall {
     grid-row: span 1;
   }
 }
@@ -368,22 +370,22 @@ a {
 
 /* Start Famous */
 
-.Famous{
+.Famous {
   padding: 100px 0;
   background-color: var(--bg-color-alt);
 }
-.Famous .container{
+.Famous .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
-.Famous .box{
+.Famous .box {
   background-color: var(--bg-color-box);
   border-radius: 6px;
   position: relative;
   padding: 20px;
 }
-.Famous .box img{
+.Famous .box img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -392,32 +394,110 @@ a {
   right: 0;
   border: 10px solid var(--bg-color);
 }
-hr{
+hr {
   border: 1px solid var(--main-color);
 }
-.Famous .box h3{
+.Famous .box h3 {
   padding-bottom: 10px;
   font-size: 24px;
   color: var(--main-color);
 }
-.Famous .box span{
+.Famous .box span {
   padding-bottom: 10px;
   display: block;
   font-size: 18px;
   color: var(--text-color);
 }
-.Famous .box .star{
-  font-size: 20px;
-}
-.Famous .box .star .filled{
-  color: #ffc107;
-}
-.Famous .box p{
+.Famous .box p {
   padding-top: 10px;
   color: #777;
   line-height: 1.5;
 }
 /* End Famous */
+
+/* Start Contact */
+
+.contact {
+  padding: 100px 0;
+}
+.contact .main-heading p {
+  width: 60%;
+  margin: 0 auto 100px;
+  line-height: 2;
+  color: #777;
+  max-width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+.contact .content form .main-input {
+  display: block;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: var(--input-color);
+}
+.contact .content form input:focus,
+textarea {
+  outline: none;
+}
+.contact .content form textarea.main-input {
+  height: 200px;
+  resize: none;
+}
+.contact .content form input[type="submit"] {
+  padding: 20px;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  margin-left: auto;
+  display: flex;
+  cursor: pointer;
+}
+.contact .content .info {
+  flex-basis: 25%;
+}
+.contact .content .info h4 {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contact .content .info .phone {
+  display: block;
+  margin-bottom: 20px;
+  color: #777;
+}
+.contact .content .info2 h4 {
+  margin-top: 90px;
+}
+.contact .content .info address {
+  line-height: 2;
+  color: #777;
+}
+@media (max-width: 767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+  .contact .info {
+    order: -1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 15px;
+  }
+}
+@media(max-width:450px){
+  .contact .info{
+    padding: 0 0 15px;
+  }
+}
+/* End Contact */
 
 /* Start Animation */
 @keyframes left-move {
