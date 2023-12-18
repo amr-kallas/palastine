@@ -10,6 +10,7 @@
   --main-color: #27ae60;
   --bg-color: #191d2b;
   --bg-color-alt: #191d2b;
+  --bg-color-box:#202845;
   --text-color: #fff;
   --text-color-alt: #000;
   --padding-color: #2a2e35;
@@ -17,8 +18,9 @@
 }
 .light {
   --main-color: #2196f3;
-  --bg-color: #fff;
+  --bg-color: #ececec;
   --bg-color-alt: #ececec;
+  --bg-color-box:#fff;
   --text-color: #000;
   --text-color-alt: #fff;
   --padding-color: #fff;
@@ -140,7 +142,6 @@ a {
 /* Start Heading */
 .heading {
   background-color: var(--bg-color);
-  /* box-shadow: 0 0 10px #ddd; */
   position: relative;
   transition: all 0.3s ease-in-out;
   min-height: 100vh;
@@ -365,22 +366,24 @@ a {
 }
 /* End Gallery */
 
-.testimonials{
+/* Start Famous */
+
+.Famous{
   padding: 100px 0;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-alt);
 }
-.testimonials .container{
+.Famous .container{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   gap: 40px;
 }
-.testimonials .box{
-  background-color: #202845;
+.Famous .box{
+  background-color: var(--bg-color-box);
   border-radius: 6px;
   position: relative;
   padding: 20px;
 }
-.testimonials .box img{
+.Famous .box img{
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -390,30 +393,31 @@ a {
   border: 10px solid var(--bg-color);
 }
 hr{
-  border: 1px solid #161925;
+  border: 1px solid var(--main-color);
 }
-.testimonials .box h3{
+.Famous .box h3{
   padding-bottom: 10px;
   font-size: 24px;
+  color: var(--main-color);
 }
-.testimonials .box span{
+.Famous .box span{
   padding-bottom: 10px;
   display: block;
   font-size: 18px;
-  color: #c6cce5;
+  color: var(--text-color);
 }
-.testimonials .box .star{
+.Famous .box .star{
   font-size: 20px;
 }
-.testimonials .box .star .filled{
+.Famous .box .star .filled{
   color: #ffc107;
 }
-.testimonials .box p{
+.Famous .box p{
   padding-top: 10px;
   color: #777;
   line-height: 1.5;
 }
-/* End Testimonials */
+/* End Famous */
 
 /* Start Animation */
 @keyframes left-move {
