@@ -137,6 +137,32 @@ a {
 }
 
 /* End Global Rules */
+/* Start Scroll to Top Button Style */
+.scroll-up-btn{
+  all: unset;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  height: 90px;
+  width: 90px;
+  background-color: var(--padding-color);
+  border-radius: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.scroll-up-btn .arrow-up{
+  width: 28px;
+  height: 28px;
+  border-left: 4px solid var(--text-color);
+  border-bottom: 4px solid var(--text-color);
+  transform: rotate(135deg);
+  margin-bottom: -14px;
+  pointer-events: none;
+}
+/* End Scroll to Top Button Style */
 
 /* Start Heading */
 .heading {
@@ -343,7 +369,8 @@ a {
 .gallery .photos img {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
+  object-fit: cover; 
+  object-position: center;
   border-radius: 8px;
   transition: 0.5s;
 }
@@ -381,7 +408,8 @@ a {
   width: 100%;
   height: 300px;
   margin: auto 0;
-  animation: fadeIn 5s;
+  object-fit: cover;
+  object-position: top; 
 }
 .presidents-cards{
   flex-basis: 40%;
@@ -392,17 +420,17 @@ a {
   height: 450px;
 }
 .presidents-cards .card{
-  padding: 15px 20px;
+  padding: 30px 20px;
   width: 100%;
   position: relative;
   z-index: 1;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 22px;
+  font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: 0.3s;
   text-transform: uppercase;
   color: var(--text-color);
-  background-color: var(--padding-color);
+  background-color: var(--bg-color);
   text-align: center;
   text-wrap: nowrap;
   border-radius: 10em;
@@ -411,7 +439,6 @@ a {
 .presidents-cards .card span{
   font-weight: 100;
   font-size: small;
-
 }
 .presidents-cards .card::before,
 .presidents-cards .card::after{
@@ -620,7 +647,7 @@ textarea {
   100% {
     left: 0;
     border-radius: 0;
-    width: 50%;
+    width: 51%;
     height: 100%;
   }
 }
@@ -653,9 +680,5 @@ textarea {
     height: 200%;
     opacity: 0;
   }
-}
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 /* End Animation */

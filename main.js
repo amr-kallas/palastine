@@ -5,6 +5,14 @@ let button1 = document. querySelector("#leader1");
 let button2 = document.querySelector("#leader2");
 let button3 = document.querySelector("#leader3");
 let imgs = document.querySelector("#leaderImage");
+const btn = document.querySelector(".scroll-up-btn");
+
+btn.addEventListener("click", () => {
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+})
 theme.addEventListener("click", (e) => {
   let element = document.body;
   element.classList.toggle("light");
@@ -20,11 +28,11 @@ theme.addEventListener("click", (e) => {
 });
 
 button1.addEventListener("click", (e) =>{
-  imgs.src = "img/amr.jpg";
+  imgs.src = "img/YasserArafat.jpeg";
 });
 button2.addEventListener("click", (e) =>{
-  imgs.src = "img/amr2.jpg";
+  imgs.src = "img/RawhiFattouh.jpg";
 });
 button3.addEventListener("click", (e) =>{
-  imgs.src = "img/amr3.jpg";
+  imgs.src = "img/MahmoudAbbas.jpg";
 });
