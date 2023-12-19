@@ -11,6 +11,7 @@
   --bg-color: #191d2b;
   --bg-color-alt: #191d2b;
   --bg-color-box: #202845;
+  --bg-color-footer:#202845;
   --text-color: #fff;
   --text-color-alt: #000;
   --padding-color: #2a2e35;
@@ -22,6 +23,7 @@
   --bg-color: #ececec;
   --bg-color-alt: #ececec;
   --bg-color-box: #fff;
+  --bg-color-footer:#ddd;
   --text-color: #000;
   --text-color-alt: #fff;
   --padding-color: #fff;
@@ -324,9 +326,6 @@ a {
   padding: 100px 0;
   background-color: var(--bg-color-alt);
 }
-.gallery .container img:hover {
-  transform: scale(1.1);
-}
 @media (max-width: 550px) {
   .gallery .container img:hover {
     transform: translateY(-10px);
@@ -443,6 +442,7 @@ hr {
   width: 100%;
   border: 1px solid #ccc;
   background-color: var(--input-color);
+  color: var(--text-color);
 }
 .contact .content form input:focus,
 textarea {
@@ -498,6 +498,21 @@ textarea {
   }
 }
 /* End Contact */
+
+/* Start footer */
+
+.footer{
+  background-color: var(--bg-color-footer);
+  padding: 30px;
+  text-align: center;
+  color: var(--text-color);  
+  font-size: 18px;
+}
+.footer span{
+  color: var(--main-color);
+  font-weight: 700;
+}
+/* End footer */
 
 /* Start Animation */
 @keyframes left-move {
