@@ -4,7 +4,7 @@ let layout=document.querySelector(".layout")
 let button1 = document. querySelector("#leader1");
 let button2 = document.querySelector("#leader2");
 let button3 = document.querySelector("#leader3");
-console.log(layout)
+let imgs = document.querySelector("#leaderImage");
 theme.addEventListener("click", (e) => {
   let element = document.body;
   element.classList.toggle("light");
@@ -20,14 +20,11 @@ theme.addEventListener("click", (e) => {
 });
 
 button1.addEventListener("click", (e) =>{
-  let imgs = document.querySelector("#leaderImage");
   imgs.src = "img/amr.jpg";
 });
 button2.addEventListener("click", (e) =>{
-  let imgs = document.querySelector("#leaderImage");
   imgs.src = "img/amr2.jpg";
 });
 button3.addEventListener("click", (e) =>{
-  let imgs = document.querySelector("#leaderImage");
   imgs.src = "img/amr3.jpg";
 });
