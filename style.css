@@ -143,9 +143,9 @@ a {
   position: fixed;
   bottom: 25px;
   right: 30px;
-  height: 90px;
-  width: 90px;
-  background-color: var(--padding-color);
+  height: 40px;
+  width: 40px;
+  background-color: var(--main-color);
   border-radius: 99%;
   display: flex;
   align-items: center;
@@ -154,12 +154,12 @@ a {
   z-index: 2;
 }
 .scroll-up-btn .arrow-up{
-  width: 28px;
-  height: 28px;
-  border-left: 4px solid var(--text-color);
-  border-bottom: 4px solid var(--text-color);
+  width: 18px;
+  height: 18px;
+  border-left: 4px solid var(--text-color-alt);
+  border-bottom: 4px solid var(--text-color-alt);
   transform: rotate(135deg);
-  margin-bottom: -14px;
+  margin-bottom: -8px;
   pointer-events: none;
 }
 /* End Scroll to Top Button Style */
@@ -185,6 +185,8 @@ a {
   height: 100%;
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
+  object-fit: cover;
+  object-position: center;
 }
 .heading .image .first-img {
   opacity: 1;
@@ -313,6 +315,7 @@ a {
   max-width: 100%;
   height: 190px;
   width: 100%;
+  object-fit: cover;
 }
 .articles .box .content {
   padding: 20px;
@@ -470,6 +473,19 @@ a {
   border: 2px solid var(--bg-color);
   transition-delay: 0.5s;
 }
+@media (max-width: 767px){
+  .presidents-photos{
+    display: none;
+  }
+  .presidents .container{
+    justify-content: center;
+  }
+  .presidents-cards .card{
+    font-weight: lighter;
+    font-size: 16px;
+  }
+
+}
 /* End presidents Style */
 /* Start Leader Footer stylee */
 .presidents-footer{
@@ -481,7 +497,7 @@ a {
 }
 .presidents-footer hr {
   width: 40%;
-  height: 0.4em;
+  height: 0.2em;
   background-color: var(--main-color);
   border: none;
 }
@@ -517,6 +533,8 @@ a {
   top: -50px;
   right: 0;
   border: 10px solid var(--bg-color);
+  object-fit: cover;
+  object-position: center;
 }
 hr {
   border: 1px solid var(--main-color);
