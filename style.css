@@ -194,6 +194,7 @@ a {
 .heading .image .second-img {
   position: absolute;
   left: 0;
+  top: 0;
 }
 
 .heading .container {
