@@ -218,6 +218,15 @@ a {
   border-radius: 4px;
   translate: 6px 2px;
 }
+.heading .theme{
+  border: none;
+  background: none;
+}
+.heading .theme .toggle{
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
 @media (max-width: 767px) {
   .heading .container {
     flex-direction: column;

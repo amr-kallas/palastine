@@ -26,7 +26,18 @@ theme.addEventListener("click", (e) => {
 
   }
 });
+theme.addEventListener('click', function() {
+  const sunIcon = this.children[0];
+  const moonIcon = this.children[1];
 
+  if (sunIcon.style.display !== 'none') {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'inline-block';
+  } else {
+    sunIcon.style.display = 'inline-block';
+    moonIcon.style.display = 'none';
+  }
+});
 button1.addEventListener("click", (e) =>{
   imgs.src = "img/YasserArafat.jpeg";
 });
